@@ -82,6 +82,9 @@ class SSH_trans():
     try:
      sshd.append(sock_sshd.accept()[0])
      print('sshd connected\n')
+    except:
+     pass
+    try:
      ssh.append(sock_ssh.accept()[0])
      print('ssh connected\n')
      loop=0
